@@ -43,14 +43,14 @@ cachemean <- function(x, ...) {
 ## function in R.
 
 makeCacheMatrix <- function(x = matrix()) {
-  m <- NULL
+  i <- NULL
   set <- function(y) {
     x <<- y
-    m <<- NULL
+    i <<- NULL
   }
   get <- function() x
-  setinverse <- function(solve) m <<- solve
-  getinverse <- function() m
+  setinverse <- function(solve) i <<- solve
+  getinverse <- function() i
   list(set = set, get = get,
        setinverse = setinverse,
        getinverse = getinverse)
@@ -68,14 +68,14 @@ makeCacheMatrix <- function(x = matrix()) {
 ## makeCacheMatrix above.
 
 cacheSolve <- function(x, ...) {
-        ## Return a matrix that is the inverse of 'x'
-  m <- x$getinverse()
-  if(!is.null(m)) {
+  ## Return a matrix that is the inverse of 'x'
+  i <- x$getinverse()
+  if(!is.null(i)) {
     message("getting cached data")
-    return(m)
+    return(i)
   }
   data <- x$get()
-  m <- solve(data, ...)
-  x$setinverse(m)
-  m
+  i <- solve(data, ...)
+  x$setinverse(i)
+  i
 }
