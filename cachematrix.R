@@ -47,7 +47,6 @@ cachemean <- function(x, ...) {
 
 
 
-
 ## Write a short comment describing this function
 ## This is the assignment function
 ## makeCacheMatrix
@@ -76,7 +75,8 @@ makeCacheMatrix <- function(x = matrix()) {
 ## This is the assignment function
 ## cacheSolve
 ## This computes for the inverse matrix in makeCacheMatrix.
-## If solved already, just get it from the cache instead.
+## If solved already, just get it from the cache instead
+## from the variable i.
 ## The function call to get the cache data is getinverse() 
 ## and if no cache data exist, it will solve for it instead
 ## using the setinverse function which is also called from
