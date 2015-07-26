@@ -1,3 +1,4 @@
+## OMG, still getting used to git... and deadlines coming up...
 ## Put comments here that give an overall description of what your
 ## functions do
 
