@@ -1,6 +1,11 @@
 ## Put comments here that give an overall description of what your
 ## functions do
 
+## Above are the assignment example functions:
+## makeVector and cacheMean.
+## On line 50 is the start of my assignment functions:
+## makeCacheMatrix and cacheSolve
+
 ## Given Initial Example Functions
 ## makeVector
 
@@ -32,6 +37,16 @@ cachemean <- function(x, ...) {
   x$setmean(m)
   m
 }
+
+
+
+
+
+
+
+
+
+
 
 ## Write a short comment describing this function
 ## This is the assignment function
